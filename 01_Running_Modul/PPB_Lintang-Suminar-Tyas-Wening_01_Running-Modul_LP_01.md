@@ -21,7 +21,7 @@
 <br>
 ![image](img/AndroidSDK_Tools.png)
 
-# Bukti Intall VSD dan Extensions
+# Bukti Install VSD dan Extensions
 <li> Screenshot bukti ter-install visual studio code beserta extensions "Dart" dan "Flutter"
 
 ![image](img/ExtensionsDart.png)
