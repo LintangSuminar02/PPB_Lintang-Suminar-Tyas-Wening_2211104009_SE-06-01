@@ -7,7 +7,8 @@
 **MODUL 2** <br>
 
 <p align="center">
-  <img src="flutter_application_1/assets/logo tel-u" alt="logo tel-u image" />
+
+![image](image/logoTel-u.jpeg)
 </p>
 
 Oleh:<br>
