@@ -102,10 +102,10 @@ Langkah-langkah membuat project flutter
 ## *4. Setelah berhasil, modifikasi halaman diatas untuk menampilkan biodata kalian, minimal 5 widget!! (bebas, buatlah sekreatif mungkin)*
 <li> Hasil Modifikasi
 
-![image](image/hasilModifikasi.png)
+![image](image/hasilRunning.png)
 <br>
 <li> Hasil Source Code
 
-![image](image/SourceCode.png)
+![image](image/hasil_SourceCode.png)
 
 
