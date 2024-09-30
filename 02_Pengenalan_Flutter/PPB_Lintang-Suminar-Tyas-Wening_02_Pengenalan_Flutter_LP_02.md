@@ -35,22 +35,22 @@ Dikembangkan oleh Google, Flutter adalah sebuah framework UI yang memungkinkan p
 
 <li>Contoh widget pada Flutter
 <br>
-Flutter memiliki konsep widget yang berfungsi sebagai blok bangunan dasar untuk membuat antarmuka pengguna. Semua yang terlihat pada aplikasi Flutter, seperti tombol, gambar, dan layout, semuanya adalah widget. Berikut beberapa contoh widget yang sering digunakan di Flutter:
-a. Stateless Widget 
-adalah bagian tampilan aplikasi yang tidak berubah-ubah. Artinya, tampilannya akan selalu sama dan tidak bisa diinteraksi secara dinamis
-b. Stateful Widget 
-adalah bagian tampilan aplikasi yang bisa berubah-ubah. Berbeda dengan Stateless Widget, bagian ini lebih fleksibel dan bisa berinteraksi dengan pengguna secara dinamis
-c. Scaffold 
-adalah kerangka dasar untuk membuat tampilan halaman di aplikasi Flutter.
-d. Container 
-adalah widget yang menyediakan fleksibilitas dalam mengatur tampilan, ukuran, dan posisi dari widget anak-anaknya
-e. Padding 
-adalah widget yang berfungsi untuk menambahkan ruang kosong di antara tepi suatu widget dengan konten di dalamnya
-f. Center 
-adalah widget yang membuat sesuatu berada di tengah layar.
-g. Widget Row 
-digunakan untuk menyusun komponen secara berjajar ke samping. Kita tinggal masukkan komponen-komponen yang ingin kita susun ke dalam Row.
-h. Widget Column
+Flutter memiliki konsep widget yang berfungsi sebagai blok bangunan dasar untuk membuat antarmuka pengguna. Semua yang terlihat pada aplikasi Flutter, seperti tombol, gambar, dan layout, semuanya adalah widget. Berikut beberapa contoh widget yang sering digunakan di Flutter: <br>
+a. Stateless Widget <br>
+adalah bagian tampilan aplikasi yang tidak berubah-ubah. Artinya, tampilannya akan selalu sama dan tidak bisa diinteraksi secara dinamis <br>
+b. Stateful Widget <br>
+adalah bagian tampilan aplikasi yang bisa berubah-ubah. Berbeda dengan Stateless Widget, bagian ini lebih fleksibel dan bisa berinteraksi dengan pengguna secara dinamis <br>
+c. Scaffold <br>
+adalah kerangka dasar untuk membuat tampilan halaman di aplikasi Flutter. <br>
+d. Container <br>
+adalah widget yang menyediakan fleksibilitas dalam mengatur tampilan, ukuran, dan posisi dari widget anak-anaknya <br>
+e. Padding <br>
+adalah widget yang berfungsi untuk menambahkan ruang kosong di antara tepi suatu widget dengan konten di dalamnya <br>
+f. Center <br>
+adalah widget yang membuat sesuatu berada di tengah layar. <br>
+g. Widget Row <br>
+digunakan untuk menyusun komponen secara berjajar ke samping. Kita tinggal masukkan komponen-komponen yang ingin kita susun ke dalam Row. <br>
+h. Widget Column <br>
 Kebalikan dari Row, Column merupakan suatu widget yang digunakan
 untuk membuat widget-widget tersusun berjajar secara vertikal. Column
 memiliki sintaks mirip dengan Row
