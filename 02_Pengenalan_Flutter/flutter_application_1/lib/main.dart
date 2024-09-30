@@ -11,83 +11,180 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Biodata"),
+          backgroundColor: Colors.teal,
         ),
-        body: BiodataCard(),
+        body: BiodataPage(),
       ),
     );
   }
 }
 
-class BiodataCard extends StatelessWidget {
+class BiodataPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(16.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Gambar Profil
-          CircleAvatar(
-            radius: 50,
-            child: Image.asset('assets/profile.jpeg'),
+          // Header
+          Container(
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.blueGrey[50],
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  spreadRadius: 3,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                // Gambar profil
+                CircleAvatar(
+                  radius: 40,
+                  backgroundImage: AssetImage(
+                      '/assets/profile.jpeg'), // Ganti dengan path gambar Anda
+                ),
+                SizedBox(height: 10),
+                // Nama dan NIM
+                Text(
+                  "Lintang Suminar Tyas Wening",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "2211104009",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey[700],
+                  ),
+                ),
+              ],
+            ),
           ),
           SizedBox(height: 20),
-          // Nama dan Detail Biodata
-          Card(
-            elevation: 4,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
+          // Alamat
+          Container(
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.lightBlueAccent[100],
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.blueAccent.withOpacity(0.3),
+                  spreadRadius: 3,
+                  blurRadius: 7,
+                  offset: Offset(0, 3),
+                ),
+              ],
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Icon(Icons.person, color: Colors.blue),
-                      SizedBox(width: 10),
-                      Text(
-                        "Nama: Lintang Suminar Tyas W",
-                        style: TextStyle(fontSize: 18),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.badge, color: Colors.white, size: 30),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "  Program Studi:",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "  Rekayasa Perangkat Lunak",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+          // Jenis Kelamin & Domisili
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Jenis Kelamin
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  margin: EdgeInsets.only(right: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.pinkAccent,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.redAccent.withOpacity(0.3),
+                        spreadRadius: 3,
+                        blurRadius: 7,
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Row(
+                  child: Column(
                     children: [
-                      Icon(Icons.badge, color: Colors.green),
-                      SizedBox(width: 10),
-                      Text(
-                        "NIM: 2211104009",
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
-                  Row(
-                    children: [
-                      Icon(Icons.female, color: Colors.orange),
-                      SizedBox(width: 10),
+                      Icon(Icons.female, color: Colors.white, size: 40),
+                      SizedBox(height: 10),
                       Text(
                         "Jenis Kelamin: Perempuan",
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Row(
+                ),
+              ),
+              // Domisili
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  margin: EdgeInsets.only(left: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.greenAccent,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.green.withOpacity(0.3),
+                        spreadRadius: 3,
+                        blurRadius: 7,
+                        offset: Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: Column(
                     children: [
-                      Icon(Icons.holiday_village, color: Colors.pink),
-                      SizedBox(width: 10),
+                      Icon(Icons.holiday_village,
+                          color: Colors.white, size: 40),
+                      SizedBox(height: 10),
                       Text(
                         "Domisili: Purwokerto",
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ],
                   ),
-                ],
+                ),
               ),
-            ),
+            ],
           ),
         ],
       ),
