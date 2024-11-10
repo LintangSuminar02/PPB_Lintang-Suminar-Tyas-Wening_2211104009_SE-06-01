@@ -33,8 +33,9 @@ Soal
 _Note: Jangan lupa sertakan source code, screenshoot output, dan deskripsi program. Kreatifitas menjadi nilai tambah._
 
 Jawab
-1. models/product.dart, file ini berisi class Product untuk merepsentasikan data produk
-<li> Source Code pada product.dart :
+1. `models/product.dart`, file ini berisi class Product untuk merepsentasikan data produk
+<li> Source Code pada `product.dart` :
+```
 class Product {
   final String id;
   final String name;
@@ -90,10 +91,14 @@ final List<Product> products = [
         'https://vernyx.com/cdn/shop/products/TSJ474-_21_1024x1024.jpg?v=1633493160',
     category: 'Tas',
   ),
-]; <br>
+]; 
+<br>
 
-2. pages/home_page.dart, halaman ini menampilkan daftar produk. Ketika pengguna mengklik produk, akan diarahkan ke halaman detail produk
-<li> Source Code :
+![image](image/SourceCode_Product.png)<br>
+
+2. `pages/home_page.dart`, halaman ini menampilkan daftar produk. Ketika pengguna mengklik produk, akan diarahkan ke halaman detail produk
+<li> Source Code pada `home_page.dart` :
+```
 import 'package:flutter/material.dart';
 import '../models/product.dart';
 import 'product_detail.dart';
@@ -161,10 +166,15 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-} <br>
+} 
+<br>
 
-3. pages/product_detail.dart, halaman ini menampilkan detail produk yang dipilih, seperti gambar, deskripsi, dan harga
-<li> import 'package:flutter/material.dart';
+![image](image/SourceCode_HomePage.png) <br>
+
+3. `pages/product_detail.dart`, halaman ini menampilkan detail produk yang dipilih, seperti gambar, deskripsi, dan harga
+<li> Soruce Code pada `product_detail.dart` :
+```
+import 'package:flutter/material.dart';
 import '../models/product.dart';
 
 class ProductDetailPage extends StatelessWidget {
@@ -246,10 +256,14 @@ class ProductDetailPage extends StatelessWidget {
       ),
     );
   }
-} <br>
+} 
+<br>
 
-4. main.dart, file utama yang mengatur navigasi ke halaman HomePage
-<li> Source Code :
+![image](image/SourceCode_DetailProduct.png) <br>
+
+4. `main.dart`, file utama yang mengatur navigasi ke halaman HomePage
+<li> Source Code pada `main.dart`:
+```
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 
@@ -268,7 +282,10 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
     );
   }
-} <br>
+} 
+<br>
+
+![image](image/SourceCode_Main.png) <br>
 
 <li> Screenshot Output : 
 <li> Tampilan Home
