@@ -35,7 +35,7 @@ _Note: Jangan lupa sertakan source code, screenshoot output, dan deskripsi progr
 1. `models/product.dart`, file ini berisi class `Product` untuk merepsentasikan data produk
 <li> Source Code pada `product.dart` :
 ```
- class Product {
+class Product {
   final String id;
   final String name;
   final String description;
@@ -90,11 +90,13 @@ final List<Product> products = [
         'https://vernyx.com/cdn/shop/products/TSJ474-_21_1024x1024.jpg?v=1633493160',
     category: 'Tas',
   ),
-]; <br>
+];
+<br>
+
 
 2. `pages/home_page.dart`, halaman ini menampilkan daftar produk. Ketika pengguna mengklik produk, akan diarahkan ke halaman detail produk
 <li> Source Code pada `home_page.dart` :
- ```
+```
 import 'package:flutter/material.dart';
 import '../models/product.dart';
 import 'product_detail.dart';
@@ -162,7 +164,9 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-} <br>
+}
+<br>
+
 
 3. `pages/product_detail.dart`, halaman ini menampilkan detail produk yang dipilih, seperti gambar, deskripsi, dan harga
 <li> Source Code pada `product_detail.dart` :
@@ -249,7 +253,9 @@ class ProductDetailPage extends StatelessWidget {
       ),
     );
   }
-} <br>
+}
+<br>
+
 
 4. `main.dart`, file utama yang mengatur navigasi ke halaman HomePage
 <li> Source Code pada `main.dart`:
@@ -272,7 +278,8 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
     );
   }
-} <br>
+}
+<br>
 
 <li> Screenshot Output : 
 <li> Tampilan Home
