@@ -32,10 +32,10 @@ SE-06-01<br>
 _Note: Jangan lupa sertakan source code, screenshoot output, dan deskripsi program. Kreatifitas menjadi nilai tambah._
 
 **Jawaban**
-1. `models/product.dart`, file ini berisi class 'Product' untuk merepsentasikan data produk
-<li> Source Code pada 'product.dart` :
- ```dart
-class Product {
+1. `models/product.dart`, file ini berisi class `Product` untuk merepsentasikan data produk
+<li> Source Code pada `product.dart` :
+```
+ class Product {
   final String id;
   final String name;
   final String description;
@@ -92,9 +92,9 @@ final List<Product> products = [
   ),
 ]; <br>
 
-2. pages/home_page.dart, halaman ini menampilkan daftar produk. Ketika pengguna mengklik produk, akan diarahkan ke halaman detail produk
-<li> Source Code pada home_page.dart :
-```
+2. `pages/home_page.dart`, halaman ini menampilkan daftar produk. Ketika pengguna mengklik produk, akan diarahkan ke halaman detail produk
+<li> Source Code pada `home_page.dart` :
+ ```
 import 'package:flutter/material.dart';
 import '../models/product.dart';
 import 'product_detail.dart';
@@ -164,8 +164,8 @@ class HomePage extends StatelessWidget {
   }
 } <br>
 
-3. pages/product_detail.dart, halaman ini menampilkan detail produk yang dipilih, seperti gambar, deskripsi, dan harga
-<li> Source Code pada product_detail.dart :
+3. `pages/product_detail.dart`, halaman ini menampilkan detail produk yang dipilih, seperti gambar, deskripsi, dan harga
+<li> Source Code pada `product_detail.dart` :
 ```
 import 'package:flutter/material.dart';
 import '../models/product.dart';
@@ -251,8 +251,8 @@ class ProductDetailPage extends StatelessWidget {
   }
 } <br>
 
-4. main.dart, file utama yang mengatur navigasi ke halaman HomePage
-<li> Source Code pada main.dart:
+4. `main.dart`, file utama yang mengatur navigasi ke halaman HomePage
+<li> Source Code pada `main.dart`:
 ```
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
