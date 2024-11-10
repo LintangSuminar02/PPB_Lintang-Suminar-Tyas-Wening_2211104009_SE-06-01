@@ -28,14 +28,13 @@ SE-06-01<br>
 
 ## UNGUIDED
 **Tugas Mandiri** <br>
-Soal
-<li> Buatlah satu project untuk menampilkan beberapa produk dan halaman e-commerce dengan menerapkan class model serta navigasi halaman. <br>
+<li> (Soal)Buatlah satu project untuk menampilkan beberapa produk dan halaman e-commerce dengan menerapkan class model serta navigasi halaman. <br>
 _Note: Jangan lupa sertakan source code, screenshoot output, dan deskripsi program. Kreatifitas menjadi nilai tambah._
 
-Jawab
-1. models/product.dart, file ini berisi class Product untuk merepsentasikan data produk
-<li> Source Code pada product.dart :
- ``` 
+**Jawaban**
+1. `models/product.dart`, file ini berisi class 'Product' untuk merepsentasikan data produk
+<li> Source Code pada 'product.dart` :
+ ```dart
 class Product {
   final String id;
   final String name;
