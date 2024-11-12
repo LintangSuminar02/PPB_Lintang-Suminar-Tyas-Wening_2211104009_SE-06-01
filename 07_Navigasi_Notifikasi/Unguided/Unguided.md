@@ -60,13 +60,17 @@ _Note: Jangan lupa sertakan source code, screenshoot output, dan deskripsi progr
 <br>
 
 <li> Screenshot Output : 
-<li> Tampilan Home
+<li> Tampilan Home <br>
+  
 ![image](image/ScreenshotOutput_TampilanHome.png) <br>
-<li> Tampilan ketika pengguna mengklik produk maka yang diklik nanti akan muncul tampilan notifikasi (snackbar) dibagian bawah
+<li> Tampilan ketika pengguna mengklik produk maka yang diklik nanti akan muncul tampilan notifikasi (snackbar) dibagian bawah <br>
+  
 ![image](image/Screenshot_Notifikasi(snackbar).png <br>
-<li> Tampilan Detail Produk
+<li> Tampilan Detail Produk <br>
+  
 ![image](image/ScreenshotOutput_TampilanDetailProduk.png) <br>
-<li> Tampilan ketika pengguna mengklik "Tambahkan ke Keranjang" maka yang dklik akan muncul tampilan notifikasi (snackbar) dibagian bawah
+<li> Tampilan ketika pengguna mengklik "Tambahkan ke Keranjang" maka yang dklik akan muncul tampilan notifikasi (snackbar) dibagian bawah <br>
+
 ![image](image/ScreenshotOutput_Notifikasi(Snackbar).png) <br>
 
 <li> Deskripsi Program :
