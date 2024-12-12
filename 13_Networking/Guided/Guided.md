@@ -40,9 +40,13 @@ SE-06-01<br>
 
 ![image](img/SourceCode_Detail.png) <br>
 
-<li> Source Code counter controller
+<li> Source Code counter controller ketika mengklik ikon "-" hasilnya langsung 0
 
 ![image](img/SourceCode_CounterController.png) <br>
+
+<li> Source Code counter cpntroller ketika mengklik ikon "-" hasilnya berkurang 1
+
+![image](img/SourceCode_CounterControllerapp.png) <br>
 
 **SCREENSHOT OUTPUT PRAKTIKUM DIKELAS**
 <li> Screenshot tampilan awal GetX
