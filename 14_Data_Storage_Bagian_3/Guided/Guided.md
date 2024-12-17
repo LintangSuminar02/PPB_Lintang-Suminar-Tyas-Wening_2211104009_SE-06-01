@@ -61,7 +61,7 @@ SE-06-01<br>
 
 ![image](img/output_tampilanKlikDELETE.png) <br>
 
-**DESKRIPSI PROGRAM**
+**DESKRIPSI PROGRAM** <br>
 Program ini adalah contoh implementasi Flutter untuk melakukan operasi HTTP (GET, POST, UPDATE, DELETE) terhadap API menggunakan ApiService. Data yang diambil disimpan dalam _posts dan ditampilkan sebagai daftar. Program memanfaatkan fungsi _handleApiOperation untuk menangani operasi API, menampilkan indikator loading, dan memberi notifikasi sukses atau error dengan SnackBar. Antarmukanya mencakup tombol untuk setiap operasi HTTP dengan warna berbeda, indikator loading, dan daftar data yang diperbarui secara otomatis. 
 
 Layanan API dijalankan menggunakan bahasa Dart dan package http untuk menangani operasi HTTP terhadap API publik https://jsonplaceholder.typicode.com. Fungsi fetchPosts mengambil data dari server dan menyimpannya ke dalam daftar posts, fungsi createPost mengirimkan data baru ke server sekaligus memperbarui daftar lokal, fungsi updatePost memperbarui data tertentu (ID 1) di server, sedangkan deletePost menghapus data berdasarkan ID yang sama. Program memeriksa status HTTP untuk memastikan setiap operasi berhasil dan melempar exception jika terjadi kesalahan. Untuk pengembangan lebih lanjut, aplikasi dapat ditingkatkan dengan penggunaan ID dinamis atau fitur caching data.
